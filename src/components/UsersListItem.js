@@ -2,6 +2,8 @@ import { GoX } from "react-icons/go";
 import { useThunk } from "../hooks/use-thunk";
 import { deleteUser } from "../store";
 import Button from "./Button";
+import ExpandablePanel from "./ExpandablePanel";
+import AlbumsList from "./AlbumsList";
 
 export default function UsersListItem({ user }) {
   const [doDeleteUser, isDeletingUser, deletingUserError] =
@@ -11,20 +13,24 @@ export default function UsersListItem({ user }) {
     doDeleteUser(id);
   };
 
+  const header = (
+    <>
+      <Button
+        loading={isDeletingUser}
+        onClick={() => handleDeleteUser(user.id)}
+      >
+        <GoX />
+      </Button>
+      <div>{user.name}</div>
+    </>
+  );
+
   return (
     <div>
-      <div key={user.id} className="mt-2 mb-2 rounded border">
-        <div className="flex p-2 gap-3 items-center cursor-pointer">
-          <Button
-            loading={isDeletingUser}
-            onClick={() => handleDeleteUser(user.id)}
-          >
-            <GoX />
-          </Button>
-          {deletingUserError && "Error Deleting User Data..."}
-          <div>{user.name}</div>
-        </div>
-      </div>
+      <ExpandablePanel header={header}>
+        <AlbumsList user={user} />
+      </ExpandablePanel>
+      {deletingUserError && "Error Deleting User Data..."}
     </div>
   );
 }

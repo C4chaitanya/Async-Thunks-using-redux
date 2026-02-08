@@ -24,38 +24,37 @@ export default function UsersList() {
     return state.users;
   });
 
+  let content;
   if (isLoadingUsers) {
-    return <Skeleton times={6} className="w-full h-10" />;
-  }
-
-  if (loadingUsersError) {
-    return <div>Error fetching data...</div>;
-  }
-
-  const renderedListOfUsers = data.map((user) => {
-    return (
-      <div key={user.id} className="mt-2 mb-2 rounded border">
-        <div className="flex p-2 justify-between items-center cursor-pointer">
-          {user.name}
+    content = <Skeleton times={6} className="w-full h-10" />;
+  } else if (loadingUsersError) {
+    content = <div>Error fetching data...</div>;
+  } else {
+    content = data.map((user) => {
+      return (
+        <div key={user.id} className="mt-2 mb-2 rounded border">
+          <div className="flex p-2 justify-between items-center cursor-pointer">
+            {user.name}
+          </div>
         </div>
-      </div>
-    );
-  });
+      );
+    });
+  }
 
   return (
     <div>
       <div className="flex flex-row justify-between items-center mb-2 mt-2">
         <p>My Users :</p>
-        {isCreatingUser ? (
-          "Loaing user..."
-        ) : (
-          <Button primary className="cursor-pointer" onClick={handleAddUser}>
-            + Add User
-          </Button>
-        )}
+        <Button
+          loading={isCreatingUser}
+          className="cursor-pointer"
+          onClick={handleAddUser}
+        >
+          + Add User
+        </Button>
         {creatingUsersError && "Error Fetching users data..."}
       </div>
-      <div>{renderedListOfUsers}</div>
+      <div>{content}</div>
     </div>
   );
 }

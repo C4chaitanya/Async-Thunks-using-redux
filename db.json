@@ -1,10 +1,6 @@
 {
   "users": [
     {
-      "name": "Clark Kreiger",
-      "id": 1
-    },
-    {
       "name": "Ella Mertz",
       "id": 2
     },
@@ -19,8 +15,18 @@
     {
       "name": "Timothy Russel",
       "id": 6
+    },
+    {
+      "name": "Shelly Ortiz",
+      "id": 7
     }
   ],
-  "albums": [],
+  "albums": [
+    {
+      "id": "3",
+       "name": "Hiking...",
+       "userId": "2" 
+    }
+  ],
   "photos": []
 }

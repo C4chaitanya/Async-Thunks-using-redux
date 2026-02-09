@@ -22,7 +22,6 @@ export default function UsersList() {
   };
 
   const { data } = useSelector((state) => {
-    console.log("users list", state);
     return state.users;
   });
 

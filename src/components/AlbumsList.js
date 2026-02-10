@@ -4,12 +4,12 @@ import Button from "./Button";
 import Skeleton from "./Skeleton";
 
 function AlbumsList({ user }) {
-  const { data, error, isLoading } = useFetchAlbumsQuery(user.id);
+  const { data, error, isFetching } = useFetchAlbumsQuery(user.id);
 
   const [addAlbum, results] = useCreateAlbumMutation();
 
   let content;
-  if (isLoading) {
+  if (isFetching) {
     content = (
       <div>
         <Skeleton className="h-10 w-full" times={3} />

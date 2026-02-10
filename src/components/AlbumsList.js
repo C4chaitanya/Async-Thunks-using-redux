@@ -30,7 +30,9 @@ function AlbumsList({ user }) {
   return (
     <div>
       <div className="flex flex-row items-center justify-between">
-        <div>Albums created by: {user.name}</div>
+        <h2>
+          Albums created by: <b>{user.name}</b>
+        </h2>
         <Button onClick={handleCreateAlbum} loading={results.isLoading}>
           + Add Album
         </Button>

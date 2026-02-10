@@ -24,8 +24,108 @@
   "albums": [
     {
       "id": "3",
-       "name": "Hiking...",
-       "userId": "2" 
+      "name": "Hiking Trip...",
+      "userId": 2
+    },
+    {
+      "id": "2",
+      "name": "Ramayanam",
+      "userId": 3
+    },
+    {
+      "userId": 2,
+      "name": "Incredible Fresh Mouse",
+      "id": "RHosI2G"
+    },
+    {
+      "userId": 2,
+      "name": "Luxurious Wooden Hat",
+      "id": "NE21svQ"
+    },
+    {
+      "userId": 3,
+      "name": "Practical Metal Chips",
+      "id": "u4oIut5"
+    },
+    {
+      "userId": 2,
+      "name": "Generic Metal Hat",
+      "id": "3DLR_Jh"
+    },
+    {
+      "userId": 2,
+      "name": "Elegant Wooden Hat",
+      "id": "59aur_e"
+    },
+    {
+      "userId": 2,
+      "name": "Modern Rubber Shoes",
+      "id": "XGwJP0R"
+    },
+    {
+      "userId": 2,
+      "name": "Recycled Granite Salad",
+      "id": "XMk5lz4"
+    },
+    {
+      "userId": 2,
+      "name": "Generic Bronze Fish",
+      "id": "IJtsnOb"
+    },
+    {
+      "userId": 2,
+      "name": "Oriental Steel Car",
+      "id": "oa1Fl6r"
+    },
+    {
+      "userId": 3,
+      "name": "Fantastic Plastic Ball",
+      "id": "fZcEfFk"
+    },
+    {
+      "userId": 5,
+      "name": "Rustic Wooden Towels",
+      "id": "Wa8Djn0"
+    },
+    {
+      "userId": 6,
+      "name": "Unbranded Soft Car",
+      "id": "aPXTuto"
+    },
+    {
+      "userId": 3,
+      "name": "Practical Plastic Bacon",
+      "id": "elD8foU"
+    },
+    {
+      "userId": 3,
+      "name": "Sleek Plastic Pizza",
+      "id": "A3isYex"
+    },
+    {
+      "userId": 3,
+      "name": "Small Cotton Pants",
+      "id": "46Daqdb"
+    },
+    {
+      "userId": 5,
+      "name": "Unbranded Wooden Gloves",
+      "id": "AlR3ZXI"
+    },
+    {
+      "userId": 5,
+      "name": "Refined Cotton Shoes",
+      "id": "OSvJnI9"
+    },
+    {
+      "userId": 5,
+      "name": "Handcrafted Fresh Fish",
+      "id": "Du_MwIJ"
+    },
+    {
+      "userId": 2,
+      "name": "Tasty Granite Fish",
+      "id": "rNiAyey"
     }
   ],
   "photos": []
